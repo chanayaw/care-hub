@@ -1,3 +1,9 @@
+import { PageHeader } from "@/components/shared/PageHeader";
+
 export default function HomePage() {
-  return <h1>CareHub Home</h1>;
+  return (
+    <div className="p-6">
+      <PageHeader title="Home" />
+    </div>
+  );
 }
