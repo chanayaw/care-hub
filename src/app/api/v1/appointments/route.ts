@@ -1,6 +1,14 @@
+import { successResponse, errorResponse } from '@/lib/utils/response';
+
 export async function GET() {
-	return Response.json([
-		{ id: '1', title: 'Doctor Visit' },
-		{ id: '2', title: 'Therapy Session' },
-	]);
+	try {
+		const appointments = [
+			{ id: '1', title: 'Doctor Visit' },
+			{ id: '2', title: 'Therapy Session' },
+		];
+
+		return successResponse(appointments);
+	} catch {
+		return errorResponse('Unable to load appointments', 500);
+	}
 }
