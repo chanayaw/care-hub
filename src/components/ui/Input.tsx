@@ -8,7 +8,7 @@ export function Input({ className, type = "text", ...props }: InputProps) {
     <input
       type={type}
       className={cn(
-        "max-w-80 rounded-md border-2 border-stone-300 px-3 py-2 text-sm transition outline-none",
+        "w-full rounded-md border-2 border-stone-300 px-3 py-2 text-sm transition outline-none",
         "focus:ring-2 focus:ring-stone-600/10",
         className,
       )}

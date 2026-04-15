@@ -15,7 +15,7 @@ export function Button({
     <button
       type={type}
       className={cn(
-        "inline-flex max-w-50 cursor-pointer items-center justify-center rounded-md bg-stone-300 px-4 py-2 text-sm font-bold transition",
+        "inline-flex cursor-pointer items-center justify-center rounded-md bg-stone-300 px-4 py-2 text-sm font-bold transition",
         "disabled:cursor-not-allowed disabled:opacity-50",
         className,
       )}
